@@ -18,7 +18,7 @@ dependencies:
 <uses-permission android:name="android.permission.READ_LOGS" />
 ```
 > 适配Android P
-在资源文件中添加`network_security_config.xml`
+`项目/android/app/src/main/res` 新建文件夹xml，在文件夹中添加`network_security_config.xml`文件，内容如下:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
@@ -27,10 +27,13 @@ dependencies:
     </domain-config>
 </network-security-config>
 ```
-AndroidManifest.xml中给Application添加
+`项目/android/app/src/main/AndroidManifest.xml`中给`Application`添加
 ```xml
 <application 
-android:networkSecurityConfig="@xml/network_security_config"> 
+...
+android:networkSecurityConfig="@xml/network_security_config"
+...
+> 
 </application>
 ```
 #### 2. IOS使用说明：
