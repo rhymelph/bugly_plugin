@@ -1,6 +1,13 @@
 # bugly_plugin
 
 ## Getting Started
+添加包：
+```yaml
+dependencies:
+  bugly_plugin:
+    git: https://github.com/rhymelph/bugly_plugin.git
+```
+
 #### 1. Android使用说明：
 > 添加权限
 ```xml
