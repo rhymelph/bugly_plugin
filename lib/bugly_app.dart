@@ -6,9 +6,9 @@ import 'package:flutter/foundation.dart';
 
 void runCatchErrorApp(Widget widget,String androidAppId,String iosAppId) async {
   if (defaultTargetPlatform == TargetPlatform.iOS) {
-    await BuglyPlugin.initCrashReport(androidAppId, true);
-  } else if (defaultTargetPlatform == TargetPlatform.android) {
     await BuglyPlugin.initCrashReport(iosAppId, true);
+  } else if (defaultTargetPlatform == TargetPlatform.android) {
+    await BuglyPlugin.initCrashReport(androidAppId, true);
   }
   _ErrorManager.init();
   runZoned(() => runApp(widget), onError: (Object obj, StackTrace stack) {
