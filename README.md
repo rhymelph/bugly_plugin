@@ -1,5 +1,7 @@
 # bugly_plugin
 
+<img src="https://bugly.qq.com/v2/image?id=2c06cba9-7d27-4f1c-8b0d-b932c33deaf3" width="100px"/>
+
 ## Getting Started
 添加包：
 ```yaml
